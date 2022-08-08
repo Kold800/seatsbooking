@@ -56,6 +56,7 @@ const Ticket = (props) => {
                         }
                     </div>
                     <h1 className={styles.uid} id="user" name="user">{user}</h1>
+                    
                 </div>
         </div>
     )
