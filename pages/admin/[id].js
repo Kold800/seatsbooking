@@ -70,9 +70,9 @@ const Movie = (props) => {
                 loading && <Loading />
             }
             <div className={styles.main_cont}>
-                <div className={styles.poster_cont}>
+                {/* <div className={styles.poster_cont}>
                     <img className={styles.poster} src={movie.images[0]} alt="poster" id="poster"/>
-                </div>
+                </div> */}
                 <div className={styles.details}>
                     <div className={styles.info}>
                         <div className={styles.title}>
@@ -84,56 +84,12 @@ const Movie = (props) => {
                                     : <h1 className={styles.active} id="active">❌</h1>
                                 }
                             </div>
-                            <h1 id="limit" className={styles.limit}>{movie.limit}+</h1>
+                            {/* <h1 id="limit" className={styles.limit}>{movie.limit}+</h1> */}
                         </div>
-                        <div className={styles.desc}>
+                        {/* <div className={styles.desc}>
                             <h1 id="description" className={styles.description}>{movie.description}</h1>
-                        </div>
-                        <div className={styles.tag}>
-                            <ul className={styles.ul}>
-                            {   
-                            movie.tag.map((tag, index) => (
-                                <li key={index} className={styles.li}>
-                                    <span>{tag}</span>
-                                </li>
-                            ))
-                            }
-                            </ul>
-                        </div>
-                        <div className={styles.main}>
-                            <label className={styles.label}>Director: </label>
-                            <ul className={styles.ul}>
-                                {
-                                    movie.director.map((director, index) => (
-                                        <li className={styles.li} key={index}>
-                                            <span>{director}</span>
-                                        </li>
-                                    ))
-                                }
-                            </ul>
-                        </div>
-                        <div className={styles.main}>
-                            <label className={styles.label}>Writers: </label>
-                            <ul className={styles.ul}>
-                                {
-                                    movie.writers.map((writers, index) => (
-                                        <li key={index} className={styles.li}>
-                                            <span>{writers}</span>
-                                        </li>
-                                    ))
-                                }
-                            </ul>
-                        </div>
-                        <div className={styles.rating}>
-                            <h1 id="rating">❤️ {movie.rating}/10</h1>
-                        </div>
-                        <div className={styles.duration}>
-                            <h1 id="duration" className={styles.dur}>{movie.duration}</h1>
-                        </div>
-                        <div className={styles.release}>
-                            <label htmlFor='release' className={styles.label}>Release:</label>
-                            <h1 id="release">{movie.release}</h1>
-                        </div>
+                        </div> */}
+                        
                     </div>
                 </div>
                 <div className={styles.buttons}>
@@ -145,38 +101,16 @@ const Movie = (props) => {
                     }
                 </div>
             </div>
-            <div className={styles.about}>
+            {/* <div className={styles.about}>
                 <h2>About Movie:</h2>
-                <div className={styles.main}>
-                    <label className={styles.label}>Stars: </label>
-                    <ul className={styles.ul}>
-                        {
-                            movie.stars.map((stars, index) => (
-                                <li key={index} className={styles.li}>
-                                    <span>{stars}</span>
-                                </li>
-                            ))
-                        }
-                    </ul>
-                </div>
-                <div className={styles.gall_main}>
-                    <label htmlFor="trailer" className={styles.gall_label}>trailer</label>
-                    <iframe 
-                        className={styles.tariler}
-                        src={`https://www.youtube.com/embed/${movie.trailer}`}
-                        frameBorder='0'
-                        allow='autoplay; encrypted-media'
-                        allowFullScreen
-                        title='video'
-                    />
-                </div>
+               
                 <div className={styles.gall_main}>
                     <label htmlFor="image" className={styles.gall_label}>Images</label>
                     <div className={styles.car}>
                         <Carousels images={movie.images}/>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
