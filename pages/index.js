@@ -4,7 +4,7 @@ import { db } from "../utils/firebaseConfig";
 import Link from 'next/link';
 import { toast } from "react-toastify";
 import Loading from './../components/loading';
-import styles from "../styles/home.module.scss";
+import styles from "../styles/Home.module.scss";
 
 const ShowMovies = () => {
     const [movies, setMovies] = useState([]);
