@@ -4,10 +4,9 @@ import { db } from "../../utils/firebaseConfig";
 import Link from 'next/link';
 import { toast } from "react-toastify";
 import Loading from "../../components/loading";
-import styles from '../../styles/home.module.scss';
+import styles from '../../styles/Home.module.scss';
 import Image from "next/image"
 import searchi from "../../public/search.svg";
-
 import { getDoc, doc } from "firebase/firestore/lite";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import Router from "next/router"
@@ -88,16 +87,8 @@ const ShowMovies = () => {
                                 </div>
                                 <div className={styles.details}>
                                     <h1 id="name" name="name" className={styles.item}>{movie.name}</h1>
-                                    <h1 id="rating" name="rating" className={styles.item2}>❤️ {movie.rating}/10</h1>
-                                    <ul className={styles.ul}>
-                                        { 
-                                            movie.tag.map((tag, index) => (
-                                                <li key={index} className={styles.li}>
-                                                    <span>{tag}</span>
-                                                </li>
-                                            ))
-                                        }
-                                    </ul>
+                                    {/* <h1 id="rating" name="rating" className={styles.item2}>❤️ {movie.rating}/10</h1> */}
+                                    
                                 </div>
                                 </a></Link>
                         </div>                  
