@@ -66,29 +66,26 @@ const AddCinema = () => {
             }
             <div className={styles.add_simple}>
                 <div className={styles.add_main}>
-                    <label htmlFor="name" className={styles.add_label}>name</label>
+                    <label htmlFor="name" className={styles.add_label}>Name</label>
                     <input className={styles.add_input} type="text" id="name" placeholder="name" name="name" value={cinema.name} onChange={handleInputChange} />
                 </div>
                 <div className={styles.add_main}>
-                    <label htmlFor="address" className={styles.add_label}>address</label>
+                    <label htmlFor="address" className={styles.add_label}>Address</label>
                     <input className={styles.add_input} type="text" id="address" placeholder="address" name="address" value={cinema.address} onChange={handleInputChange} />
                 </div>
                 <div className={styles.add_main}>
-                    <label htmlFor="location" className={styles.add_label}>location</label>
+                    <label htmlFor="location" className={styles.add_label}>Location</label>
                     <input className={styles.add_input} type="text" id="location" placeholder="location" name="location" value={cinema.location} onChange={handleInputChange} />
                 </div>
-                <div className={styles.add_main}>
-                    <label htmlFor="rating" className={styles.add_label}>rating</label>
-                    <input className={styles.add_input} type="text" id="rating" placeholder="rating" name="rating" value={cinema.rating} onChange={handleInputChange} />
-                </div>
+                
             </div>
             <div className={styles.add_simple}>
                 <div className={styles.add_main}>
-                    <label htmlFor="seatrow" className={styles.add_label}>seatrow</label>
+                    <label htmlFor="seatrow" className={styles.add_label}>Seatrow</label>
                     <input className={styles.add_input} type="number" id="seatrow" placeholder="seatrow" name="seatrow" value={cinema.seatrow} onChange={handleInputChange} />
                 </div>
                 <div className={styles.add_main}>
-                    <label htmlFor="seatcol" className={styles.add_label}>seatcol</label>
+                    <label htmlFor="seatcol" className={styles.add_label}>Seatcol</label>
                     <input className={styles.add_input} type="number" id="seatcol" placeholder="seatcol" name="seatcol" value={cinema.seatcol} onChange={handleInputChange} />
                 </div>
             </div>
