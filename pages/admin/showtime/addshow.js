@@ -103,7 +103,7 @@ const AddShow = () => {
                 }
                 <div className={styles.add_simple}>
                     <div className={styles.add_main}>
-                        <label htmlFor="movie" className={styles.add_label}>movie</label>
+                        <label htmlFor="movie" className={styles.add_label}>Select Seats set</label>
                         <select className={styles.add_input} value={show.movie} onChange={handleChangeCategoryMovie} id="movie">
                             <option value=""></option>
                             {
@@ -114,7 +114,7 @@ const AddShow = () => {
                         </select>
                     </div>
                     <div className={styles.add_main}>
-                        <label htmlFor="cinema" className={styles.add_label}>cinema</label>
+                        <label htmlFor="cinema" className={styles.add_label}>Select Floor</label>
                         <select className={styles.add_input} value={show.cinema} onChange={handleChangeCategoryCinema} id="cinema">
                             <option value=""></option>
                             {
@@ -127,15 +127,15 @@ const AddShow = () => {
                 </div>
                 <div className={styles.add_simple}>
                     <div className={styles.add_main}>
-                        <label htmlFor="startAt" className={styles.add_label}>startAt</label>
+                        <label htmlFor="startAt" className={styles.add_label}>Start At</label>
                         <input className={styles.add_input} type="time" id="startAt" placeholder="startAt" name="startAt" value={show.startAt} onChange={handleInputChange} />
                     </div>
                     <div className={styles.add_main}>
-                        <label htmlFor="startDate" className={styles.add_label}>startDate</label>
+                        <label htmlFor="startDate" className={styles.add_label}>Start Date</label>
                         <input className={styles.add_input} type="date" id="startDate" placeholder="startDate" name="startDate" value={show.startDate} onChange={handleInputChange} />
                     </div>
                     <div className={styles.add_main}>
-                        <label htmlFor="endDate" className={styles.add_label}>endDate</label>
+                        <label htmlFor="endDate" className={styles.add_label}>End Date</label>
                         <input className={styles.add_input} type="date" id="endDate" placeholder="endDate" name="endDate" value={show.endDate} onChange={handleInputChange} />
                     </div>
                 </div>
